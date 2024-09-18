@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>华文笔记</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* 浅蓝色背景 */
+            color: #333;
+        }
+
+        header {
+            background-color: #003366; /* 深蓝色背景 */
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .header-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .header-title h1,
+        .header-title a {
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 0;
+        }
+
+        .header-title a {
+            color: #fff;
+        }
+
+        .header-title .learn-link {
+            text-decoration: underline;
+        }
+
+        .header-title a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 40px 20px;
+        }
+
+        .category {
+            margin-bottom: 40px;
+        }
+
+        .category h2 {
+            font-size: 24px;
+            color: #003366; /* 深蓝色文字 */
+            margin-bottom: 20px;
+        }
+
+        .note-item {
+            margin-bottom: 15px;
+        }
+
+        /* 整个框可以点击 */
+        .note-item a {
+            display: block;
+            padding: 10px;
+            border: 2px solid #003366; /* 深蓝色边框 */
+            border-radius: 5px;
+            background-color: #ffffff; /* 白色背景 */
+            text-decoration: none;
+            color: #003366; /* 深蓝色文字 */
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .note-item a:hover {
+            background-color: #f0f8ff; /* 鼠标悬停时浅蓝色背景 */
+        }
+
+        .note-preview {
+            margin-top: 10px;
+            padding: 5px;
+            border: 1px solid #003366; /* 深蓝色边框 */
+            border-radius: 5px;
+            background-color: #f0f8ff; /* 浅蓝色背景 */
+        }
+
+        /* 调整预览框的尺寸 */
+        .note-preview iframe {
+            width: 100%;
+            height: 150px; /* 进一步缩小预览框 */
+            border: none;
+        }
+
+        footer {
+            background-color: #003366; /* 深蓝色 */
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-title">
+            <a href="index.html">caLearn</a>
+            <h1>华文笔记</h1>
+            <a href="discussion.html" class="learn-link">学习交流平台</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- 笔记类别 -->
+        <section class="category">
+            <h2>笔记</h2>
+            <div class="note-item">
+                <a href="note_chinese.pdf" download>
+                    笔记
+                </a>
+                <div class="note-preview">
+                    <iframe src="note_chinese.pdf"></iframe>
+                </div>
+            </div>
+                        <!-- 添加更多课件 -->
+        </section>
+
+        <!-- 现代文类别 -->
+        <section class="category">
+            <h2>现代文</h2>
+            <div class="note-item">
+                <a href="modern_comprehension1.pdf" download>
+                    第一篇 现代文
+                </a>
+                <div class="note-preview">
+                    <iframe src="modern_comprehension1.pdf"></iframe>
+                </div>
+            </div>
+            <div class="note-item">
+                <a href="modern_comprehension2.pdf" download>
+                    第二篇 现代文
+                </a>
+                <div class="note-preview">
+                    <iframe src="modern_comprehension2.pdf"></iframe>
+                </div>
+            </div>
+            <!-- 添加更多现代文 -->
+        </section>
+
+        <!-- 写作类别 -->
+        <section class="category">
+            <h2>写作</h2>
+            <div class="note-item">
+                <a href="writing1.pdf" download>
+                    第一篇 写作
+                </a>
+                <div class="note-preview">
+                    <iframe src="writing1.pdf"></iframe>
+                </div>
+            </div>
+            <div class="note-item">
+                <a href="writing2.pdf" download>
+                    第二篇 写作
+                </a>
+                <div class="note-preview">
+                    <iframe src="writing2.pdf"></iframe>
+                </div>
+            </div>
+            <!-- 添加更多写作课件 -->
+        </section>
+
+        <!-- 文言文类别 -->
+        <section class="category">
+            <h2>文言文</h2>
+            <div class="note-item">
+                <a href="classical1.pdf" download>
+                    第一篇 文言文
+                </a>
+                <div class="note-preview">
+                    <iframe src="classical1.pdf"></iframe>
+                </div>
+            </div>
+            <div class="note-item">
+                <a href="classical2.pdf" download>
+                    第二篇 文言文
+                </a>
+                <div class="note-preview">
+                    <iframe src="classical2.pdf"></iframe>
+                </div>
+            </div>
+            <!-- 添加更多文言文 -->
+        </section>
+
+        <!-- 应用文类别 -->
+        <section class="category">
+            <h2>应用文</h2>
+            <div class="note-item">
+                <a href="applied1.pdf" download>
+                    第一篇 应用文
+                </a>
+                <div class="note-preview">
+                    <iframe src="applied1.pdf"></iframe>
+                </div>
+            </div>
+            <div class="note-item">
+                <a href="applied2.pdf" download>
+                    第二篇 应用文
+                </a>
+                <div class="note-preview">
+                    <iframe src="applied2.pdf"></iframe>
+                </div>
+            </div>
+            <!-- 添加更多应用文 -->
+        </section>
+
+        <!-- 语言基础知识类别 -->
+        <section class="category">
+            <h2>语言基础知识</h2>
+            <div class="note-item">
+                <a href="language_basics1.pdf" download>
+                    第一篇 语言基础知识
+                </a>
+                <div class="note-preview">
+                    <iframe src="language_basics1.pdf"></iframe>
+                </div>
+            </div>
+            <div class="note-item">
+                <a href="language_basics2.pdf" download>
+                    第二篇 语言基础知识
+                </a>
+                <div class="note-preview">
+                    <iframe src="language_basics2.pdf"></iframe>
+                </div>
+            </div>
+            <!-- 添加更多语言基础知识 -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 caLearn</p>
+    </footer>
+</body>
+</html>

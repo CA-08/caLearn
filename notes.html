@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>caLearn 笔记领取</title>
+    <style>
+        /* styles.css */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #e0f7fa; /* 浅蓝色背景 */
+            color: #333;
+        }
+
+        /* 标题行样式 */
+        header {
+            background-color: #003366; /* 深蓝色背景 */
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .header-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .header-title h1,
+        .header-title a {
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 0;
+        }
+
+        .header-title a {
+            color: #fff;
+        }
+
+        .header-title .learn-link {
+            text-decoration: underline;
+        }
+
+        .header-title a:hover {
+            text-decoration: underline;
+        }
+
+        /* 主内容样式 */
+        main {
+            padding: 40px 20px;
+        }
+
+        .category-section {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .category-section h2 {
+            font-size: 32px;
+            color: #003366; /* 深蓝色 */
+            margin-bottom: 20px;
+        }
+
+        .option-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .option-card {
+            border: 2px solid #003366; /* 深蓝色边框 */
+            border-radius: 10px;
+            padding: 20px;
+            width: 180px;
+            height: 100px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            background-color: #ffffff; /* 透明背景 */
+        }
+
+        .option-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        .option-card a {
+            display: block;
+            text-decoration: none;
+            color: #003366; /* 深蓝色文字 */
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #003366; /* 深蓝色 */
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-title">
+            <a href="index.html">caLearn</a>
+            <h1>笔记领取</h1>
+            <a href="discussion.html" class="learn-link">学习交流平台</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="category-section">
+            <h2>初一</h2>
+            <div class="option-row">
+                <div class="option-card">
+                    <a href="notes_chinese.html">华文</a>
+                </div>
+                <div class="option-card">
+                    <a href="notes_malay.html">国语</a>
+                </div>
+                <div class="option-card">
+                    <a href="notes_english.html">英文</a>
+                </div>
+                <div class="option-card">
+                    <a href="notes_math.html">数学</a>
+                </div>
+                <div class="option-card">
+                    <a href="notes_science.html">科学</a>
+                </div>
+                <div class="option-card">
+                    <a href="notes_history.html">历史</a>
+                </div>
+                <div class="option-card">
+                    <a href="notes_geography.html">地理</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 caLearn</p>
+    </footer>
+</body>
+</html>

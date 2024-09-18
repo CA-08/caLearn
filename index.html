@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>caLearn 首页</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* 浅蓝背景 */
+            color: #333;
+        }
+
+        header {
+            background-color: #003366; /* 深蓝色背景 */
+            padding: 20px 0;
+            text-align: center;
+            color: #fff;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .option {
+            margin: 0 20px;
+            padding: 20px;
+            border: 2px solid #003366; /* 深蓝色边框 */
+            border-radius: 10px;
+            background-color: #ffffff; /* 白色背景 */
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #003366;
+            text-decoration: none;
+            width: 200px;
+            transition: background-color 0.3s ease;
+        }
+
+        .option span {
+            text-decoration: underline; /* 添加字体下划线 */
+        }
+
+        .option:hover {
+            background-color: #f0f8ff; /* 悬停时浅蓝色背景 */
+        }
+
+        footer {
+            background-color: #003366; /* 深蓝色背景 */
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>caLearn</h1>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <a href="notes.html" class="option"><span>笔记领取</span></a>
+            <a href="exercises.html" class="option"><span>习题</span></a>
+            <a href="courses.html" class="option"><span>线上课程</span></a>
+        </div>
+        <div class="row">
+            <a href="discussion.html" class="option"><span>学习交流平台</span></a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 caLearn</p>
+    </footer>
+</body>
+</html>
